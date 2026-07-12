@@ -192,11 +192,11 @@ mcu_dep = declare_dependency(
 )
 
 # ── System: stb_image_resize2 and stb_image_write (header-only) ─────────────────────────────────
-if not cc.has_header('stb/stb_image_resize2.h')
-  error('stb/stb_image_resize2.h not found')
+if not cc.has_header('stb_image_resize2.h')
+  error('stb_image_resize2.h not found')
 endif
-if not cc.has_header('stb/stb_image_write.h')
-  error('stb/stb_image_write.h not found')
+if not cc.has_header('stb_image_write.h')
+  error('stb_image_write.h not found')
 endif
 
 # ── System: libwebp (WebP decode and thumbnail encode) ───────────────────────
